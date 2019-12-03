@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-    
+    #navbar {
+        height: 100%;
+        width: 180px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        padding-top: 20px;
+    }
+
+    .nav-link{
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+    }
+
+    .nav-link:hover {
+        color: #f1f1f1;
+    }
+
+    #main-doc{
+        margin-left: 180px;
+        padding: 0px 10px;
+    }
+
+
     </style>
 
     <body>
@@ -51,7 +79,7 @@
                 <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. </p>
             </section>
 
-            <section>
+            <section id="Declaring_variables" class="main-section">
                 <header>Declaring variables</header>
                 <p>You can declare a variable in three ways: </p>
                 <p>With the keyword var. For example, </p>
@@ -65,7 +93,7 @@
                 <p>This syntax can be used to declare a block scope local variable. See Variable scope below. </p>
             </section>
 
-            <section>
+            <section id="Variable_Scope" class="main-section">
                 <header>Variable Scope</header>
                 <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function. </p>
                 <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement. </p>
@@ -78,7 +106,16 @@
 
         </main>
 
-        <nav></nav>
+        <nav id="navbar">
+            <header>JS Documentation</header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Previous_knowledge_required">Previous knowledge required</a>
+            <a class="nav-link" href="#Javascript_and_Java">Javascript and Java</a>
+            <a class="nav-link" href="#Hello_World">Hello World</a>
+            <a class="nav-link" href="#Variables">Variables</a>
+            <a class="nav-link" href="#Declaring_variables">Declaring Variables</a>
+            <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+        </nav>
 
     </body>
     
