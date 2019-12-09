@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+
     #navbar {
-        height: 100%;
-        width: 180px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
+        border-right: solid;
+        border-left: solid;
+        border-color: #999;
+        position: fixed; 
+        top: 10px;
         left: 0;
-        margin: 0;
-        background-color: #111;
-        padding-top: 20px;
-        overflow: scroll;
+        height: 100%;
+        width: 23%
+    }
+
+    #navbar > a {
+        text-decoration: none;
+        color: #000;
     }
 
     .nav-link{
@@ -19,6 +23,7 @@
         text-decoration: none;
         font-size: 20px;
         color: #818181;
+        border: 2px solid #ddd;
         display: block;
     }
 
@@ -27,14 +32,32 @@
     }
 
     #main-doc{
-        margin-left: 180px;
+        margin-left: 25%;
         padding: 0px 10px;
     }
 
+    @media screen and (max-width: 500px) {
+        body{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+        }
+    }
 
     </style>
 
     <body>
+
+            <nav id="navbar">
+                    <header>JS Documentation</header>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                    <a class="nav-link" href="#Previous_knowledge_required">Previous knowledge required</a>
+                    <a class="nav-link" href="#Javascript_and_Java">Javascript and Java</a>
+                    <a class="nav-link" href="#Hello_World">Hello World</a>
+                    <a class="nav-link" href="#Variables">Variables</a>
+                    <a class="nav-link" href="#Declaring_variables">Declaring Variables</a>
+                    <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+                </nav>
+                
         <main id="main-doc">
 
             <section id="Introduction" class="main-section">
@@ -108,16 +131,7 @@
 
         </main>
 
-        <nav id="navbar">
-            <header>JS Documentation</header>
-            <a class="nav-link" href="#Introduction">Introduction</a>
-            <a class="nav-link" href="#Previous_knowledge_required">Previous knowledge required</a>
-            <a class="nav-link" href="#Javascript_and_Java">Javascript and Java</a>
-            <a class="nav-link" href="#Hello_World">Hello World</a>
-            <a class="nav-link" href="#Variables">Variables</a>
-            <a class="nav-link" href="#Declaring_variables">Declaring Variables</a>
-            <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
-        </nav>
+
 
     </body>
     
